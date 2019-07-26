@@ -1,0 +1,11 @@
+{
+  "name": "simple-logger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Simple Logger",
+  "author": "Helloyunho",
+  "dependencies": {
+    "signale": "^1.4.0"
+  }
+}
