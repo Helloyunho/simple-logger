@@ -13,7 +13,7 @@ class Logger {
    * @param {boolean} debug true for turn on debug method
    * @param {string} logPath Log save path
    */
-  constructor (debug = false, logPath = path.reslove(path.dirname(require.main.filename), './log')) {
+  constructor (debug = false, logPath = path.resolve(path.dirname(require.main.filename), './log')) {
     this.dirPath = logPath
     if (!(fs.existsSync(this.dirPath))) {
       fs.mkdirSync(this.dirPath)
