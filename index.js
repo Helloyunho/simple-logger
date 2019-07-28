@@ -19,7 +19,7 @@ class Logger {
       fs.mkdirSync(this.dirPath)
     }
     this.filePath = path.resolve(this.dirPath, `./${getDate()}.log`)
-    fs.writeFileSync(this.filePath)
+    fs.writeFileSync(this.filePath, '')
     this.debug = debug
   }
 
