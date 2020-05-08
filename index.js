@@ -25,7 +25,9 @@ class Logger {
       this.filePath = logPath
     }
 
-    fs.writeFileSync(this.filePath, '')
+    if (!fs.existsSync(this.filePath)) {
+      fs.writeFileSync(this.filePath, '')
+    }
     this.debug = debug
   }
 
